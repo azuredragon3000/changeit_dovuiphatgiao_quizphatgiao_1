@@ -1,0 +1,42 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/teal_200"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:weightSum="100">
+
+    <TextView
+        android:text="Bạn chọn sai rồi"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:id="@+id/losers"
+            android:layout_width="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:text="Cố gắng lần sau nhá"
+            android:layout_gravity="center"
+            android:textSize="20sp"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_lose_back"
+            android:layout_gravity="center"
+            android:text="OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+</LinearLayout>

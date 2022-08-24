@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation_gamephatgiao"
+    app:startDestination="@id/gameTopicFragment">
+
+    <fragment
+        android:id="@+id/gameTopicFragment"
+        android:name="com.myapp.quizphatgiao.GameTopicFragment"
+        android:label="fragment_game_topic"
+        tools:layout="@layout/fragment_game_topic" >
+        <action
+            android:id="@+id/action_gameTopicFragment_to_gameContentFragment"
+            app:destination="@id/gameContentFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameContentFragment"
+        android:name="com.myapp.quizphatgiao.GameContentFragment"
+        android:label="fragment_game_content"
+        tools:layout="@layout/fragment_game_content" >
+        <action
+            android:id="@+id/action_gameContentFragment_to_gameTopicFragment"
+            app:destination="@id/gameTopicFragment" />
+    </fragment>
+</navigation>

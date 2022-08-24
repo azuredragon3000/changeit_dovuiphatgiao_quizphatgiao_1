@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".TrongHoaSenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/hoasengold"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:text="Vàng: 1000"
+                android:textSize="20sp"
+                android:layout_height="wrap_content"/>
+
+            <!--<TextView
+
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:background="@android:color/holo_blue_light"
+                android:textSize="15sp"
+                android:text="Mỗi ngày sau khi đăng nhập bạn sẻ có 100 vàng tùy vào ngôi chùa bạn đang sở hữu hoặc Thu hoạch hoa sen bên dưới để nhận vàng"
+                android:layout_height="wrap_content"/>-->
+
+        </LinearLayout>
+
+       <!-- <LinearLayout
+            android:layout_width="130dp"
+            android:layout_weight="0"
+            android:orientation="vertical"
+            android:layout_height="100dp">
+
+            <ImageView
+                android:layout_width="130dp"
+                android:src="@drawable/ic_launcher_background"
+                android:layout_height="80dp"/>
+            <TextView
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:text="Nâng cấp chùa"
+                android:background="@color/teal_200"
+                android:textSize="13sp"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+-->
+
+    </LinearLayout>
+
+   <!-- <androidx.appcompat.widget.AppCompatButton
+        android:layout_marginTop="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/teal_200"
+        android:text="Nhận vàng mỗi ngày"/>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rc_tronghoasen"
+        android:layout_marginTop="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</LinearLayout>

@@ -1,0 +1,43 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/teal_200"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:weightSum="100">
+
+    <TextView
+        android:text="Đổi 500 Vàng để mở hộp"
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_topic_ok"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:text="OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_marginTop="10dp"
+            android:id="@+id/btn_topic_not_ok"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_gravity="center"
+            android:text="NOT OK"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+</LinearLayout>

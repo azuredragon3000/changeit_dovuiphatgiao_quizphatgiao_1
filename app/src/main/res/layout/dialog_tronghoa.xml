@@ -1,0 +1,45 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/teal_200"
+    android:orientation="vertical"
+    android:padding="5dp"
+    android:weightSum="100">
+
+    <TextView
+        android:text="Bạn cần 500 gold để trồng hoa"
+
+        android:textColor="@color/black"
+        android:textSize="30sp"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"/>
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_trong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="30dp"
+            android:text="Đồng ý" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_khongtrong"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:text="Không" />
+    </RelativeLayout>
+</LinearLayout>
