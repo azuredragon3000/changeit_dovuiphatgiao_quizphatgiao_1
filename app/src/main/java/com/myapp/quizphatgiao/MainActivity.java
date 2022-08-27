@@ -1,6 +1,8 @@
 package com.myapp.quizphatgiao;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.navigation.NavDirections;
+import androidx.navigation.Navigation;
 
 import android.content.Context;
 import android.content.Intent;
@@ -17,17 +19,20 @@ import android.widget.Toast;
 
 import com.google.android.gms.ads.MobileAds;
 import com.google.android.gms.ads.initialization.AdapterStatus;
+import com.google.android.gms.ads.rewarded.RewardItem;
 import com.myapp.mylibrary.ads.AdsBanner;
 import com.myapp.mylibrary.ads.AdsInterstitial;
 import com.myapp.mylibrary.boitinhyeu.FunctionCommon;
 
 import java.util.Map;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements InterfaceAds{
     PersistentData persistentData;
     //private AdsInterstitial adsInterstitial;
     AdsInterstitial adsInterstitial;
     UpdateManager updateManager;
+
+    TextView maingold;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,23 +43,15 @@ public class MainActivity extends AppCompatActivity {
         new AdsBanner(this,this,R.id.adView);
         persistentData = ((MyApp)getApplication()).getData();
         updateManager = new UpdateManager(this);
+
         // mediation process
         MediationProcess(this);
         // rewarded ads process
-        Button donate = findViewById(R.id.bt_donate);
-        donate.setOnClickListener(v->{
-            DiaLogBack2 diaLogBack2 = new DiaLogBack2();
-            diaLogBack2.showDialog(this,
-                    "Để giúp ứng dụng phát triển tốt hơn hảy ủng hộ team chúng tôi qua \n" +
-                            "00119181001\n" +
-                            "TP Bank \n"+
-                            "PHAN HUY CUONG \n"+
-                    "cảm ơn bạn nhiều");
-        });
+
         // interstitial ads process
         adsInterstitial = new AdsInterstitial("07CC7E40850ABA2DF210A2D2564CAD76", "ca-app-pub-8404443559572571/9913894405", this);
 
-        TextView maingold = findViewById(R.id.main_gold);
+        maingold = findViewById(R.id.main_gold);
         maingold.setText("Vàng: "+persistentData.gold+"");
 
 
@@ -126,4 +123,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    @Override
+    public void getResultAds(RewardItem rewardItem) {
+
+        /*NavDirections action =
+                GameTopicFragmentDirections.actionGameTopicFragmentToGameContentFragment();
+        Navigation.findNavController(view).navigate(action);*/
+    }
 }

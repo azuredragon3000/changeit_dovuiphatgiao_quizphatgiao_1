@@ -6,4 +6,5 @@ public class PersistentData {
     public long[] time = new long[50];
     int gold;
     int level;
+    long rewardTime;
 }

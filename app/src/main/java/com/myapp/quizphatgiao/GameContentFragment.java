@@ -75,10 +75,10 @@ public class GameContentFragment extends Fragment implements ConfirmInterface{
         randomQuestion = getRandomQuestion();
         showQuestion(randomQuestion);
 
-        point_tv = view.findViewById(R.id.point);
+        //point_tv = view.findViewById(R.id.point);
         curques_tv = view.findViewById(R.id.curques);
         gold_tv = view.findViewById(R.id.game_gold);
-        time_tv = view.findViewById(R.id.time);
+        //time_tv = view.findViewById(R.id.time);
 
         level_tv = view.findViewById(R.id.game_level);
 
@@ -237,8 +237,8 @@ public class GameContentFragment extends Fragment implements ConfirmInterface{
         // update here
         ((MyApp)getActivity().getApplication()).updateData(persistentData);
         // increase point
-        point++;
-        point_tv.setText("Point: " + point);
+       // point++;
+       // point_tv.setText("Point: " + point);
         // change color status
         setColorForCurrentQuestion(currentQuestion,R.color.Green);
         // increate cur question

@@ -9,13 +9,15 @@ import android.widget.Button;
 import android.widget.TextView;
 
 public class DiaLogTopic {
-    public void showDialog(Activity activity,ConfirmInterface confirmInterface,int index){
+    public void showDialog(Activity activity, ConfirmInterface confirmInterface, int index, int level){
         final Dialog dialog = new Dialog(activity);
         dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
         dialog.setCancelable(false);
         dialog.setContentView(R.layout.dialog_topicgame);
         dialog.getWindow().setBackgroundDrawable(new ColorDrawable(android.graphics.Color.TRANSPARENT));
 
+        TextView tv = dialog.findViewById(R.id.topictv);
+        tv.setText("Bạn cần Level: "+level+" để vào vòng này");
         Button dialogBtn_okay = (Button) dialog.findViewById(R.id.btn_topic_ok);
         dialogBtn_okay.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -25,14 +27,14 @@ public class DiaLogTopic {
             }
         });
 
-        Button dialogBtn_not_okay = (Button) dialog.findViewById(R.id.btn_topic_not_ok);
+        /*Button dialogBtn_not_okay = (Button) dialog.findViewById(R.id.btn_topic_not_ok);
         dialogBtn_not_okay.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 dialog.dismiss();
                 //confirmInterface.lose();
             }
-        });
+        });*/
 
         dialog.show();
     }

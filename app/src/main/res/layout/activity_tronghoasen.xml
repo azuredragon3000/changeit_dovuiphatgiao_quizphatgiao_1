@@ -5,9 +5,11 @@
     android:layout_width="match_parent"
     android:orientation="vertical"
     android:layout_height="match_parent"
+    android:background="#E8FCFB"
     tools:context=".TrongHoaSenActivity">
 
     <LinearLayout
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:orientation="horizontal"
         android:layout_height="wrap_content">
@@ -22,6 +24,8 @@
                 android:layout_marginTop="5dp"
                 android:layout_width="wrap_content"
                 android:text="Vàng: 1000"
+                android:background="#FFFC33"
+                android:layout_gravity="center"
                 android:textSize="20sp"
                 android:layout_height="wrap_content"/>
 
@@ -35,6 +39,7 @@
                 android:layout_height="wrap_content"/>-->
 
         </LinearLayout>
+
 
        <!-- <LinearLayout
             android:layout_width="130dp"
@@ -59,6 +64,27 @@
 
     </LinearLayout>
 
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:text="Cần 500 vàng để trồng 1 cây hoa sen \n
+                Sau 2 tiếng các bạn có thể thu hoạch với 550 gold
+        "
+        android:background="#7DCEA0"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/bt_donate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll2"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:background="#CCCCFF"
+        android:gravity="center"
+        android:text="Xem video lây 50 Vàng" />
    <!-- <androidx.appcompat.widget.AppCompatButton
         android:layout_marginTop="5dp"
         android:layout_width="wrap_content"
@@ -69,7 +95,7 @@
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rc_tronghoasen"
-        android:layout_marginTop="15dp"
+        android:layout_marginTop="50dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>
 </LinearLayout>

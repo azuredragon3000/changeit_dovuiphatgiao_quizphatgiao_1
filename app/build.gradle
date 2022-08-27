@@ -11,8 +11,8 @@ android {
         applicationId "com.myapp.quizphatgiao"
         minSdk 22
         targetSdk 32
-        versionCode 102
-        versionName "102.0"
+        versionCode 107
+        versionName "107.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }

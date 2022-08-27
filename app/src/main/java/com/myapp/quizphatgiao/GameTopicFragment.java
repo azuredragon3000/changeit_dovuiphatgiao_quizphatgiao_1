@@ -26,7 +26,7 @@ import java.util.ArrayList;
 
 public class GameTopicFragment extends Fragment implements InterfaceAds,ConfirmInterface{
     int spanCount;
-    AdsRewarded adsRewarded;
+
     int value;
     View view;
     ConfirmInterface confirmInterface;
@@ -55,10 +55,8 @@ public class GameTopicFragment extends Fragment implements InterfaceAds,ConfirmI
 
         //persistentData.gold = 100000;
 
-
-
         this.view = view;
-        adsRewarded = new AdsRewarded("ca-app-pub-8404443559572571/9795657754",getContext());
+
         persistentData = ((MyApp)getActivity().getApplication()).getData();
          tp_gold = view.findViewById(R.id.topic_gold);
          tp_level  = view.findViewById(R.id.topic_level);
@@ -76,7 +74,7 @@ public class GameTopicFragment extends Fragment implements InterfaceAds,ConfirmI
                     if(persistentData.level < level) {
                         // show dialog here
                         DiaLogTopic alert= new DiaLogTopic();
-                        alert.showDialog(requireActivity(), confirmInterface,index);
+                        alert.showDialog(requireActivity(), confirmInterface,index,level);
                     }else{
                         Toast.makeText(activity, "màn này đả vượt qua", Toast.LENGTH_SHORT).show();
                     }
@@ -139,7 +137,7 @@ public class GameTopicFragment extends Fragment implements InterfaceAds,ConfirmI
     @Override
     public void confirmtopic(int index) {
 
-        if(persistentData.gold >500) {
+       /* if(persistentData.gold >500) {
             persistentData.gold = persistentData.gold - 500;
             persistentData.level = persistentData.level + 1;
 
@@ -152,8 +150,8 @@ public class GameTopicFragment extends Fragment implements InterfaceAds,ConfirmI
             //adapterTruyen = new AdapterLevel(levelArrayList,getContext(),listener,getActivity());
             rc.setAdapter(adapterTruyen);
         }else{
-            Toast.makeText(getActivity(), "Không Đủ vàng", Toast.LENGTH_SHORT).show();
-        }
+            //Toast.makeText(getActivity(), "Không Đủ vàng", Toast.LENGTH_SHORT).show();
+        }*/
 
     }
 }
