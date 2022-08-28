@@ -72,3 +72,11 @@ app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png
 <img src="https://github.com/azuredragon3000/googleconsole_dovuiphatgiao_quizphatgiao/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" />   
 app/src/main/res/mipmap-xxxhdpi/ic_quizphatgiao_fg.png  
 <img src="https://github.com/azuredragon3000/googleconsole_dovuiphatgiao_quizphatgiao/blob/master/app/src/main/res/mipmap-xxxhdpi/ic_quizphatgiao_fg.png" />   
+capture3_quizphatgiao3.png  
+<img src="https://github.com/azuredragon3000/googleconsole_dovuiphatgiao_quizphatgiao/blob/master/capture3_quizphatgiao3.png" />   
+capture_quizphatgiao1.png  
+<img src="https://github.com/azuredragon3000/googleconsole_dovuiphatgiao_quizphatgiao/blob/master/capture_quizphatgiao1.png" />   
+capture_quizphatgiao2.png  
+<img src="https://github.com/azuredragon3000/googleconsole_dovuiphatgiao_quizphatgiao/blob/master/capture_quizphatgiao2.png" />   
+capture_quizphatgiao4.png  
+<img src="https://github.com/azuredragon3000/googleconsole_dovuiphatgiao_quizphatgiao/blob/master/capture_quizphatgiao4.png" />   
